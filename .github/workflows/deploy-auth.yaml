@@ -20,6 +20,6 @@ jobs:
       - run: docker push vasilyevmichael78/auth  
       - uses: digitalocean/action-doctl@v2
         with:
-          tocken: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - run: doctl kubernetes cluster kubeconfig save tickets-service
       - run: kubectl rollout restart deployment auth-depl
