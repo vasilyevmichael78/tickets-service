@@ -36,7 +36,7 @@ const Header = ({ currentUser }) => {
   return (
     <nav className="navbar navbar-light bg-secondary position-relative">
       <Link href="/">
-        <a className="navbar-brand p-2 text-light">GitTix</a>
+        <a className="navbar-brand p-2 text-light">MikTix</a>
       </Link>
       <div className="d-flex justify-content-lg-around">
         <ul className="nav d-flex align-items-center p-2">{links}</ul>
